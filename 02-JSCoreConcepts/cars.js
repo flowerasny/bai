@@ -1,6 +1,7 @@
 function isCar(car1, car2, car3) {
-    // return 
+    return (car1 == car2) && (car2 == car3);
 }
+console.log("-----Task 4-----")
 
 console.log(isCar(true, true, true));
 console.log(isCar(false, false, false));
