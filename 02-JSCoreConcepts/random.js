@@ -5,9 +5,11 @@ let fillInWithTenRandomNumbers = (arr) => {
         console.log(i);
         arr.push(getRandomNumber());
     }
+
+    return arr;
 }
 
-let getRandomNumber = () => 5 + Math.floor((5 - 20) * Math.random());
+let getRandomNumber = () => 5 + Math.floor((15) * Math.random());
 
 let printTable = (arr) => console.log(arr);
 
