@@ -6,15 +6,7 @@ class Students {
     }
 
     startWith(letter){
-        let result = new Array()
-
-        for(let i = 0; i < this.names.length; i++){        
-            if (this.names[i].charAt(0) == letter){
-                result.push(this.names[i])
-            }
-        }
-
-        return new Students(result)
+        return new Students(this.names.filter(name => name.charAt(0) === letter))
     }
 
     sort() {
@@ -26,13 +18,7 @@ class Students {
     }
 
     getFirst(n) {
-        let result = new Array()
-
-        for(let i = 0; i < n; i++){        
-            result.push(this.names[i])
-        }
-
-        return new Students(result)
+        return new Students(this.names.slice(0, n))
     }
 }
 console.log("-----Task 9-----")
